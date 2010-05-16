@@ -1,0 +1,27 @@
+<h1>Listing professionals</h1>
+
+<table>
+  <tr>
+    <th>Twelfth percent</th>
+    <th>Tenth percent</th>
+    <th>Degree</th>
+    <th>Current jobstatus</th>
+  </tr>
+
+<% @professionals.each do |professional| %>
+  <tr>
+    <td><%=h professional.twelfth_percent %></td>
+    <td><%=h professional.tenth_percent %></td>
+    <td><%=h professional.degree %></td>
+    <td><%=h professional.current_jobstatus %></td>
+    
+    <td><%= link_to 'Show', professional %></td>
+    <td><%= link_to 'Edit', edit_professional_path(professional) %></td>
+    <td><%= link_to 'Destroy', professional, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New professional', new_professional_path %>

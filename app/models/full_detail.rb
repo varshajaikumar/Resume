@@ -1,0 +1,3 @@
+class FullDetail < ActiveRecord::Base
+	
+end

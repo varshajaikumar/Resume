@@ -1,0 +1,57 @@
+<p>
+  <b>Name:</b>
+  <%=h @personal.name %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%=h @personal.dob %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%=h @personal.gender %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @personal.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @personal.city %>
+</p>
+
+<p>
+  <b>Pin:</b>
+  <%=h @personal.pin %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%=h @personal.mob %>
+</p>
+
+<p>
+  <b>Twelfth Percent:</b>
+  <%=h @personal.twelfth_percent %>
+</p>
+
+<p>
+  <b>Tenth Percent:</b>
+  <%=h @personal.tenth_percent %>
+</p>
+
+<p>
+  <b>Degree:</b>
+  <%=h @personal.degree %>
+</p>
+
+<p>
+  <b>Current Job Status:</b>
+  <%=h @personal.current_jobstatus %>
+</p>
+
+<%= link_to 'Edit', edit_personal_path(@personal) %> |
+<%= link_to 'Back', personals_path %>
