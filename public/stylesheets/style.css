@@ -18,7 +18,7 @@ h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	color: #800000;
+	color: #A00000;
 	text-align: left;
 }
 
@@ -81,13 +81,13 @@ table tr td {
 	margin: 0;
 	background: url('/images/img04.jpg') no-repeat left top;
 	padding-top: 30px;
-	color: #000000;
+	color: #900000;
 }
 
 #logo h1, #logo p {
 	margin: 0;
 	padding: 0;
-	color: #700000; 
+	color: #A00000; 
 }
 
 #logo h1 {
