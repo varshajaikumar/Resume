@@ -81,7 +81,7 @@ table tr td {
 	margin: 0;
 	background: url('/images/img04.jpg') no-repeat left top;
 	padding-top: 30px;
-	color: #000000;
+	color: #900000;
 }
 
 #logo h1, #logo p {

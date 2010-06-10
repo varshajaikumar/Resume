@@ -20244,3 +20244,23 @@ Rendering template within layouts/personals
 Rendering personals/index
   [4;35;1mPersonal Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
 Completed in 38ms (View: 26, DB: 2) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-10 14:03:13) [GET]
+  [4;36;1mPersonal Load (0.2ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 38ms (View: 27, DB: 2) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-10 14:03:28) [GET]
+  [4;36;1mPersonal Load (0.2ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 37ms (View: 26, DB: 2) | 200 OK [http://localhost/personals]
