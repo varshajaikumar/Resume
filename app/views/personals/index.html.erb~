@@ -1,11 +1,15 @@
-<div id = "wrapper">
+
 <div id = "header">
 <div id = "logo">
 <h1>Building Resume</h1>
 
 </div>
 </div>
+<div id = "wrapper">
+<div id ="page">
+<div id="page-bgtop">
 <h1>Listing Details</h1>
+</div>
 <table background-color = "FFF5EE">
   <tr>
     <th>Name</th>
@@ -44,4 +48,5 @@
 
 <br />
 <%= button_to "PDF" , :action => 'pdf' %> <%= link_to 'New', new_personal_path %>
+</div>
 </div>
