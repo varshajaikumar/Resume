@@ -4,7 +4,7 @@ class PersonalsController < ApplicationController
   def index
     @personals = Personal.all
     
-
+  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @personals }
@@ -83,5 +83,19 @@ class PersonalsController < ApplicationController
       format.html { redirect_to(personals_url) }
       format.xml  { head :ok }
     end
+  end
+  def pdf
+    send_data gen_pdf, :filename => "something.pdf", :type => "application/pdf" 
+  end
+
+
+  def gen_pdf
+      pdf = PdfWriter.new
+      pdf.newPage
+          pdf.writeText(10, 200, 'Text to write', :fontsize => 18)
+          pdf.writeLine(0, 0, 100, 100) #Draw line
+      pdf.newPage
+          pdf.writeText(10, 210, 'Now on page 2')
+      pdf.writeEnd
   end
 end

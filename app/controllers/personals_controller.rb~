@@ -3,8 +3,8 @@ class PersonalsController < ApplicationController
   # GET /personals.xml
   def index
     @personals = Personal.all
-    @professionals = Professional.find_professional_details
-
+    
+  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @personals }
@@ -15,7 +15,7 @@ class PersonalsController < ApplicationController
   # GET /personals/1.xml
   def show
     @personal = Personal.find(params[:id])
-    @professional = Professional.find(params[:id])
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @personal }
@@ -26,11 +26,11 @@ class PersonalsController < ApplicationController
   # GET /personals/new.xml
   def new
     @personal = Personal.new
-    @professional = Professional.new
+   
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @personal }
-      format.xml { render :xml => @professional}
+     
     end
   end
 
@@ -43,7 +43,7 @@ class PersonalsController < ApplicationController
   # POST /personals.xml
   def create
     @personal = Personal.new(params[:personal])
-    @professional = Professional.new(params[:professional])
+    
     respond_to do |format|
       if @personal.save
         flash[:notice] = 'Personal was successfully created.'
@@ -83,5 +83,19 @@ class PersonalsController < ApplicationController
       format.html { redirect_to(personals_url) }
       format.xml  { head :ok }
     end
+  end
+  def pdf
+    send_data gen_pdf, :filename => "something.pdf", :type => "application/pdf" 
+  end
+
+ private
+  def gen_pdf
+      pdf = PdfWriter.new
+      pdf.newPage
+          pdf.writeText(10, 200, 'Text to write', :fontsize => 18)
+          pdf.writeLine(0, 0, 100, 100) #Draw line
+      pdf.newPage
+          pdf.writeText(10, 210, 'Now on page 2')
+      pdf.writeEnd
   end
 end
