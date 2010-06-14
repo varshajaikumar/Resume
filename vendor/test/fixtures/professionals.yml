@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  twelfth_percent: 9.99
+  tenth_percent: 9.99
+  degree: MyString
+  current_jobstatus: MyString
+
+two:
+  twelfth_percent: 9.99
+  tenth_percent: 9.99
+  degree: MyString
+  current_jobstatus: MyString

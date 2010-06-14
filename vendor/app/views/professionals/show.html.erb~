@@ -1,0 +1,23 @@
+<p>
+  <b>Twelfth percent:</b>
+  <%=h @professional.twelfth_percent %>
+</p>
+
+<p>
+  <b>Tenth percent:</b>
+  <%=h @professional.tenth_percent %>
+</p>
+
+<p>
+  <b>Degree:</b>
+  <%=h @professional.degree %>
+</p>
+
+<p>
+  <b>Current jobstatus:</b>
+  <%=h @professional.current_jobstatus %>
+</p>
+
+
+<%= link_to 'Edit', edit_professional_path(@professional) %> |
+<%= link_to 'Back', professionals_path %>

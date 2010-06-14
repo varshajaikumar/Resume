@@ -1,0 +1,52 @@
+
+<div id = "header">
+<div id = "logo">
+Building Resume
+
+</div>
+</div>
+<div id = "wrapper">
+<div id ="page">
+
+<h1>Listing Details</h1>
+
+<table background-color = "FFF5EE">
+  <tr>
+    <th>Name</th>
+    <th>Dob</th>
+    <th>Gender</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Pin</th>
+    <th>Mobile</th>
+    <th>Twelfth Percent</th>
+    <th>Tenth Percent</th>
+    <th>Degree</th>
+    <th>Job Current Status</th>
+  </tr>
+
+<% @personals.each do |personal| %>
+  <tr>
+    <td><%=h personal.name %></td>
+    <td><%=h personal.dob %></td>
+    <td><%=h personal.gender %></td>
+    <td><%=h personal.address %></td>
+    <td><%=h personal.city %></td>
+    <td><%=h personal.pin %></td>
+    <td><%=h personal.mob %></td>
+    <td><%=h personal.twelfth_percent %></td>
+    <td><%=h personal.tenth_percent %></td>
+    <td><%=h personal.degree %></td>
+    <td><%=h personal.current_jobstatus %></td>
+
+    <td><%= link_to 'Show', personal %></td>
+    <td><%= link_to 'Edit', edit_personal_path(personal) %></td>
+    <td><%= link_to 'Destroy', personal, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= button_to "PDF" , :action => 'pdf' %> <%= link_to 'New', new_personal_path %>
+</div>
+</div>

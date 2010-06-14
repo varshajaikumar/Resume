@@ -1,0 +1,9 @@
+class FixColumnName < ActiveRecord::Migration
+  def self.up
+	rename_column :personals, :personal_id, :personal_id
+	rename_column :professionals, :professional_id, :professional_id
+  end
+
+  def self.down
+  end
+end

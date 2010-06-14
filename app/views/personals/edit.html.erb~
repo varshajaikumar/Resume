@@ -1,0 +1,59 @@
+<h1>Editing personal</h1>
+
+<% form_for(@personal) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :dob %><br />
+    <%= f.date_select :dob %>
+  </p>
+  <p>
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :pin %><br />
+    <%= f.text_field :pin %>
+  </p>
+  <p>
+    <%= f.label :mob %><br />
+    <%= f.text_field :mob %>
+  </p>
+  <p>
+    <%= f.label :twelfth_percent %><br />
+    <%= f.text_field :twelfth_percent %>
+  </p>
+  <p>
+    <%= f.label :tenth_percent %><br />
+    <%= f.text_field :tenth_percent %>
+  </p>
+  <p>
+    <%= f.label :degree %><br />
+    <%= f.text_field :degree %>
+  </p>
+  <p>
+    <%= f.label :current_job_status %><br />
+    <%= f.text_field :current_jobstatus %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+<--
+<%= link_to 'Show', @personal %> 
+<--
+<%= link_to 'Back', personals_path %>
+

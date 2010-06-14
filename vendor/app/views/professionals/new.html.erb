@@ -1,0 +1,27 @@
+<h1>New professional</h1>
+
+<% form_for(@professional) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :twelfth_percent %><br />
+    <%= f.text_field :twelfth_percent %>
+  </p>
+  <p>
+    <%= f.label :tenth_percent %><br />
+    <%= f.text_field :tenth_percent %>
+  </p>
+  <p>
+    <%= f.label :degree %><br />
+    <%= f.text_field :degree %>
+  </p>
+  <p>
+    <%= f.label :current_jobstatus %><br />
+    <%= f.text_field :current_jobstatus %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', professionals_path %>

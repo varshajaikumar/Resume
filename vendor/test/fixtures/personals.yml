@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  : 
+  dob: 2010-05-05
+  gender: MyString
+  : 
+  address: MyString
+  city: MyString
+  pin: 1
+  mob: 1
+
+two:
+  name: MyString
+  : 
+  dob: 2010-05-05
+  gender: MyString
+  : 
+  address: MyString
+  city: MyString
+  pin: 1
+  mob: 1

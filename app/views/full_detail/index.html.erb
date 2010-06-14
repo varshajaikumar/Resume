@@ -1,0 +1,33 @@
+<h1>Full Personal & Professional Details</h1>
+<% for personal in @personals -%>
+
+  <div class="entry">
+    
+    <h3><%=h personal.name %></h3>
+    <b>DOB:</b> <%= personal.dob %>
+    <b>Gender:</b> <%= personal.gender %>
+    <b>Address:</b> <%= personal.address %>
+    <b>City:</b> <%= personal.city %>
+    <b>PIN:</b> <%= personal.pin %>
+    <b>Mobile:</b> <%= personal.mob %><br/>
+
+  
+    <b>Twelfth Percent:</b> <%= personal.twelfth_percent %>
+    <b>Tenth Percent:</b> <%= personal.tenth_percent %>
+    <b>Degree:</b> <%= personal.degree %>
+    <b>Current Job Status:</b> <%= personal.current_jobstatus %>
+  </div>
+<p>
+<%= link_to 'Edit', edit_personal_path(personal) %>
+</p>
+<% end %>
+
+<p>
+<%= button_to "New", :action => "add_new", :id => @personal %>
+</p>
+<p>
+<%= link_to 'New', new_personal_path %>
+<%= link_to 'Show', personal %>
+</P>
+
+
