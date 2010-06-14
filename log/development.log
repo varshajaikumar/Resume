@@ -20485,3 +20485,12 @@ Processing PersonalsController#index (for 127.0.0.1 at 2010-06-14 21:32:52) [GET
 Rendering template within layouts/personals
 Rendering personals/index
 Completed in 110ms (View: 76, DB: 1) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-14 22:38:08) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/personals]
