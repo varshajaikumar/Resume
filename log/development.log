@@ -20584,3 +20584,313 @@ Processing PersonalsController#index (for 127.0.0.1 at 2010-06-14 22:55:55) [GET
 Rendering template within layouts/personals
 Rendering personals/index
 Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:13:13) [GET]
+  [4;36;1mPersonal Load (23.3ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+Completed in 302ms (View: 226, DB: 24) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:14:18) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:14:38) [GET]
+  [4;36;1mPersonal Load (0.1ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#new (for 127.0.0.1 at 2010-06-15 17:14:40) [GET]
+  [4;35;1mPersonal Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Rendering template within layouts/personals
+Rendering personals/new
+Completed in 189ms (View: 180, DB: 1) | 200 OK [http://localhost/personals/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#create (for 127.0.0.1 at 2010-06-15 17:16:29) [POST]
+  Parameters: {"commit"=>"Create", "personal"=>{"current_jobstatus"=>"Employeed", "mob"=>"9891873242", "city"=>"Bhopal", "address"=>"MACT", "name"=>"Megha", "twelfth_percent"=>"87", "dob(1i)"=>"2010", "degree"=>"B. tech", "tenth_percent"=>"98", "dob(2i)"=>"6", "dob(3i)"=>"15", "gender"=>"F", "pin"=>"278631"}, "authenticity_token"=>"eBSkl4NxRag/BxWUIuMbwE7usL7DduqdRi04r1z6Fqo="}
+  [4;36;1mPersonal Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPersonal Create (0.3ms)[0m   [0;1mINSERT INTO `personals` (`name`, `address`, `city`, `mob`, `current_jobstatus`, `dob`, `created_at`, `twelfth_percent`, `updated_at`, `tenth_percent`, `degree`, `personal_id`, `gender`, `pin`) VALUES('Megha', 'MACT', 'Bhopal', 9891873242, 'Employeed', '2010-06-15', '2010-06-15 11:46:29', 87.0, '2010-06-15 11:46:29', 98.0, 'B. tech', NULL, 'F', 278631)[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/personals/1
+Completed in 68ms (DB: 51) | 302 Found [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#show (for 127.0.0.1 at 2010-06-15 17:16:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPersonal Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+  [4;35;1mPersonal Load (0.3ms)[0m   [0mSELECT * FROM `personals` WHERE (`personals`.`id` = 1) [0m
+Rendering template within layouts/personals
+Rendering personals/show
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/personals/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:16:32) [GET]
+  [4;36;1mPersonal Load (0.3ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:16:39) [GET]
+  [4;36;1mPersonal Load (0.1ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:17:08) [GET]
+  [4;36;1mPersonal Load (0.2ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#new (for 127.0.0.1 at 2010-06-15 17:17:09) [GET]
+  [4;36;1mPersonal Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Rendering template within layouts/personals
+Rendering personals/new
+Completed in 80ms (View: 25, DB: 1) | 200 OK [http://localhost/personals/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:17:34) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;36;1mPersonal Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#new (for 127.0.0.1 at 2010-06-15 17:17:35) [GET]
+  [4;35;1mPersonal Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Rendering template within layouts/personals
+Rendering personals/new
+Completed in 33ms (View: 25, DB: 1) | 200 OK [http://localhost/personals/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:17:40) [GET]
+  [4;36;1mPersonal Load (0.1ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:19:27) [GET]
+  [4;36;1mPersonal Load (0.1ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 64ms (View: 56, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#new (for 127.0.0.1 at 2010-06-15 17:19:29) [GET]
+  [4;36;1mPersonal Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Rendering template within layouts/personals
+Rendering personals/new
+Completed in 34ms (View: 24, DB: 1) | 200 OK [http://localhost/personals/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:19:37) [GET]
+  [4;35;1mPersonal Load (0.3ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;36;1mPersonal Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:19:39) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;36;1mPersonal Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:25:58) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;36;1mPersonal Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:25:59) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;36;1mPersonal Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#new (for 127.0.0.1 at 2010-06-15 17:26:01) [GET]
+  [4;35;1mPersonal Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Rendering template within layouts/personals
+Rendering personals/new
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/personals/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#create (for 127.0.0.1 at 2010-06-15 17:26:45) [POST]
+  Parameters: {"commit"=>"Create", "personal"=>{"current_jobstatus"=>"Jobless", "mob"=>"9891873242", "city"=>"Kolkata", "address"=>"NIT DGP", "name"=>"Varsha", "twelfth_percent"=>"76", "dob(1i)"=>"2010", "degree"=>"B. tech", "tenth_percent"=>"76", "dob(2i)"=>"6", "dob(3i)"=>"15", "gender"=>"F", "pin"=>"700096"}, "authenticity_token"=>"eBSkl4NxRag/BxWUIuMbwE7usL7DduqdRi04r1z6Fqo="}
+  [4;36;1mPersonal Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPersonal Create (0.3ms)[0m   [0;1mINSERT INTO `personals` (`name`, `address`, `city`, `mob`, `current_jobstatus`, `dob`, `created_at`, `twelfth_percent`, `updated_at`, `tenth_percent`, `degree`, `personal_id`, `gender`, `pin`) VALUES('Varsha', 'NIT DGP', 'Kolkata', 9891873242, 'Jobless', '2010-06-15', '2010-06-15 11:56:45', 76.0, '2010-06-15 11:56:45', 76.0, 'B. tech', NULL, 'F', 700096)[0m
+  [4;35;1mSQL (42.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/personals/2
+Completed in 60ms (DB: 44) | 302 Found [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#show (for 127.0.0.1 at 2010-06-15 17:26:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPersonal Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+  [4;35;1mPersonal Load (0.2ms)[0m   [0mSELECT * FROM `personals` WHERE (`personals`.`id` = 2) [0m
+Rendering template within layouts/personals
+Rendering personals/show
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/personals/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:26:52) [GET]
+  [4;36;1mPersonal Load (0.3ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#show (for 127.0.0.1 at 2010-06-15 17:26:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPersonal Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+  [4;35;1mPersonal Load (0.3ms)[0m   [0mSELECT * FROM `personals` WHERE (`personals`.`id` = 1) [0m
+Rendering template within layouts/personals
+Rendering personals/show
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/personals/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:27:59) [GET]
+  [4;36;1mPersonal Load (0.1ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#show (for 127.0.0.1 at 2010-06-15 17:28:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPersonal Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` WHERE (`personals`.`id` = 2) [0m
+Rendering template within layouts/personals
+Rendering personals/show
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/personals/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:28:05) [GET]
+  [4;36;1mPersonal Load (0.1ms)[0m   [0;1mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;35;1mPersonal Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `personals`[0m
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/personals]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#show (for 127.0.0.1 at 2010-06-15 17:28:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPersonal Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` WHERE (`personals`.`id` = 1) [0m
+Rendering template within layouts/personals
+Rendering personals/show
+Completed in 15ms (View: 5, DB: 2) | 200 OK [http://localhost/personals/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#new (for 127.0.0.1 at 2010-06-15 17:28:11) [GET]
+  [4;36;1mPersonal Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Rendering template within layouts/personals
+Rendering personals/new
+Completed in 76ms (View: 21, DB: 1) | 200 OK [http://localhost/personals/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:28:15) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;36;1mPersonal Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/personals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PersonalsController#index (for 127.0.0.1 at 2010-06-15 17:51:03) [GET]
+  [4;35;1mPersonal Load (0.1ms)[0m   [0mSELECT * FROM `personals` [0m
+Rendering template within layouts/personals
+Rendering personals/index
+  [4;36;1mPersonal Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `personals`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/personals]
